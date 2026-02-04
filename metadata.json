@@ -1,0 +1,7 @@
+{
+  "name": "Creative Hub AI Chat",
+  "description": "A Discord-inspired chat application featuring real-time AI assistance for summarization, tone improvement, and translation, built with React and Gemini.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

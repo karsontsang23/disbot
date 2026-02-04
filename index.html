@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Creative Hub - AI Chat</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FAC638",
+              "background-light": "#f8f8f5",
+              "background-dark": "#231e0f",
+              "sidebar-light": "#e3e5e8",
+              "sidebar-dark": "#2b2d31",
+              "server-dark": "#1e1f22",
+              "ai-accent": "#8a2be2",
+            },
+            fontFamily: {
+              display: "Spline Sans, sans-serif",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .dark::-webkit-scrollbar-thumb {
+        background: #1a1b1e;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c7c9cc;
+        border-radius: 10px;
+      }
+      .server-icon {
+        @apply w-12 h-12 rounded-[50%] flex items-center justify-center cursor-pointer transition-all duration-200 bg-sidebar-light dark:bg-sidebar-dark hover:rounded-[30%] hover:bg-primary hover:text-white overflow-hidden text-slate-500 dark:text-slate-400;
+      }
+      .glow-ai {
+        box-shadow: 0 0 15px rgba(138, 43, 226, 0.4);
+      }
+      /* Custom utility for active server indicator */
+      .server-active .server-indicator {
+        height: 2.5rem; /* h-10 */
+        scale: 1;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display h-screen flex overflow-hidden">
+    <div id="root" class="w-full h-full flex"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
