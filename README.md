@@ -1,6 +1,6 @@
 # Disbot
 
-A world-class, Discord-inspired chat application featuring real-time AI assistance for summarization, tone improvement, and translation, built with React.
+A world-class, Discord-inspired chat application featuring real-time AI assistance for tone improvement, built with React.
 
 ## 🚀 Features
 
